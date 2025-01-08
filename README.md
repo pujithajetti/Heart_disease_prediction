@@ -31,6 +31,7 @@ Training Accuracy: 85.54%
 Testing Accuracy: 81.97%
 
 Based on the slightly better training accuracy, SVM was selected as the final model for deployment.And then it is deployed by using streamlit.
+
 Future Improvements
 
 Implementation of additional machine learning algorithms
