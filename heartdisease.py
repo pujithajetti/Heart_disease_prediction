@@ -4,7 +4,7 @@ from streamlit_option_menu import option_menu
 
 # Load the saved models
 try:
-    heart_disease_model = pickle.load(open(r'C:\Users\Admin\OneDrive\Desktop\Heart Disease Prediction\heart_disease_model.sav', 'rb'))
+    heart_disease_model = pickle.load(open(r'heart_disease_model.sav', 'rb'))
 except FileNotFoundError as e:
     st.error(f"Error loading models: {e}")
 
