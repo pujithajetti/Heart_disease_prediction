@@ -1,41 +1,56 @@
-# Heart_disease_prediction
-This project is a machine learning-based system designed to predict the likelihood of heart disease in patients. Utilizing a dataset containing various health parameters, the system aims to assist healthcare professionals by providing an early warning tool for heart disease risk.
-Heart Disease Prediction Model
-Project Overview
-This project implements a machine learning solution to predict heart disease using various clinical parameters. The model uses Support Vector Machine (SVM) and Logistic Regression algorithms to make predictions, with SVM being chosen as the final model based on its superior performance.
-Features
+# Heart Disease Prediction
 
-Data preprocessing and visualization
-Implementation of multiple machine learning models
-Model comparison and evaluation
-Interactive web deployment using Streamlit
-Model persistence using Pickle
+This project is a simple yet practical machine learning-based tool that predicts the likelihood of heart disease in a person based on various medical features. The goal is to assist in early diagnosis and risk assessment using a quick and non-invasive method. It’s built using Python, trained with real-world data, and deployed using Streamlit for easy access.
 
-Technical Stack
+🔗 **Live Demo:**  
+[Click here to try the app](https://heartdiseaseprediction-cga7ejarf8ykjlyuw7vhcu.streamlit.app/#913007c6)
 
-Python
-Scikit-learn
-Streamlit
-Pickle
-Other data processing libraries
+---
 
-Model Performance
-Logistic Regression
+## About the Project
 
-Training Accuracy: 85.12%
-Testing Accuracy: 81.97%
+The Heart Disease Prediction system uses supervised learning algorithms to analyze patient data and predict the possibility of heart disease. The model is trained on key clinical attributes such as age, gender, blood pressure, cholesterol level, ECG results, heart rate, and more. After comparing Logistic Regression and Support Vector Machine (SVM), we chose the SVM model for deployment based on slightly better accuracy during training.
 
-Support Vector Machine (SVM)
+The app allows users (patients, doctors, or researchers) to input medical information and get an instant risk prediction, helping support quicker medical decisions.
 
-Training Accuracy: 85.54%
-Testing Accuracy: 81.97%
+---
 
-Based on the slightly better training accuracy, SVM was selected as the final model for deployment.And then it is deployed by using streamlit.
+## Features
 
-Future Improvements
+- Cleaned and preprocessed dataset for better model performance
+- Built and compared Logistic Regression and SVM models
+- Used accuracy metrics for model evaluation
+- Pickle used to save the final trained model
+- Interactive web app created using Streamlit
+- Simple and clean UI for user input and prediction display
 
-Implementation of additional machine learning algorithms
-Feature engineering to improve model accuracy
-Enhanced visualization in the web interface
-Cross-validation implementation
-Hyperparameter tuning
+---
+
+## Tech Stack
+
+- **Language:** Python
+- **Libraries & Tools:**
+  - `pandas`, `numpy` – data handling and analysis
+  - `matplotlib`, `seaborn` – data visualization
+  - `scikit-learn` – machine learning models
+  - `pickle` – model saving
+  - `streamlit` – web app deployment
+
+---
+
+## Model Accuracy
+
+### Logistic Regression
+- **Training Accuracy:** 85.12%
+- **Testing Accuracy:** 81.97%
+
+### Support Vector Machine (SVM)
+- **Training Accuracy:** 85.54%
+- **Testing Accuracy:** 81.97%
+
+ **Final Model Chosen:** Support Vector Machine (SVM)  
+Although both models performed similarly on the test data, SVM had a slightly better training score and was more consistent during multiple evaluations.
+
+**conclusion**
+This project shows how machine learning can be applied in the healthcare domain to support early detection of heart disease. By leveraging clinical data and combining it with reliable ML models, it provides a fast, accessible, and practical tool for health risk prediction. With a simple UI and real-time prediction capability, it has potential for real-world use and continuous improvement through advanced features and tuning
+
