@@ -7,7 +7,7 @@ import numpy as np
 # Page configuration
 st.set_page_config(
     page_title="Heart Disease Prediction System",
-    page_icon="❤️",
+    page_icon="🫀",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -120,7 +120,7 @@ with st.sidebar:
 
 # Overview Page
 if selected == 'Overview':
-    st.markdown('<h1 class="main-header">❤️ Heart Disease Prediction System</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🫀 Heart Disease Prediction System</h1>', unsafe_allow_html=True)
     
     st.markdown('''
     <div class="info-card">
